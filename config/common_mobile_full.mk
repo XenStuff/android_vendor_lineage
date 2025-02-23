@@ -38,8 +38,7 @@ PRODUCT_PACKAGES += \
     FontRubikOverlay
 
 PRODUCT_COPY_FILES += \
-    $(call find-copy-subdir-files,*, packages/overlays/Lineage/tt/,$(TARGET_COPY_OUT_PRODUCT)/fonts)
-
+    $(call find-copy-subdir-files,*,vendor/aospa/fonts/,$(TARGET_COPY_OUT_PRODUCT)/fonts)
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/dictionaries
