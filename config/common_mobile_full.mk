@@ -37,6 +37,9 @@ PRODUCT_PACKAGES += \
     FontLatoOverlay \
     FontRubikOverlay
 
+PRODUCT_COPY_FILES += \
+    $(call find-copy-subdir-files,*, packages/overlays/Lineage/tt/,$(TARGET_COPY_OUT_PRODUCT)/fonts)
+
 # Include Lineage LatinIME dictionaries
 PRODUCT_PACKAGE_OVERLAYS += vendor/lineage/overlay/dictionaries
 PRODUCT_ENFORCE_RRO_EXCLUDED_OVERLAYS += vendor/lineage/overlay/dictionaries
